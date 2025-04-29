@@ -1,2 +1,2 @@
-# airbnb-clone-project
-AirBnB Clone Project! 🏠✨
+# AirBnB Clone Project! 🏠✨
+Airbnb Clone is a full-stack web application that mimics the core functionality of Airbnb: users can browse, filter, and book short-term rental listings; hosts can create and manage their own listings; and both parties can review past stays.
