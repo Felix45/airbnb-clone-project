@@ -1,11 +1,12 @@
-# AirBnB Clone Project! 🏠✨
+# AirBnB Clone Project! 🏠✨ 
 Airbnb Clone is a full-stack web application that mimics the core functionality of Airbnb: users can browse, filter, and book short-term rental listings; hosts can create and manage their own listings; and both parties can review past stays.
 
+# Front-end section
 ## Tech Stack
 - Front-End
    - React with TypeScript, Next.js for server-side rendering and static site generation, TailwindCSS for styling.
 - Back-End
-    - Python, Django, and MySQL
+    - Python, Django, MySQL, GraphQL
 -  Other tools
    - Redux or Context API for state management, REST for API integration, Jest for testing.
 
@@ -27,6 +28,14 @@ The key features implemented in this project include the following
     - A robust search feature enabling users to find properties based on criteria like location, price, and availability.
 
 Identifying a mock-up’s design properties—such as its layout grid, typography choices, color palette, and interactive elements—is essential for ensuring visual consistency, maintaining brand integrity, and guiding developers and stakeholders in translating a static concept into a functional product
+
+## Database Design
+This application includes the following entities
+- Users
+- Properties
+- Bookings
+- Reviews
+- Payments.
 
 ### Fonts
   - Quicksand (500, 600)
@@ -89,3 +98,79 @@ Identifying a mock-up’s design properties—such as its layout grid, typograph
      - Toast Notifications: Success/error messages.
      - Loading Spinner: During data fetches.
      - Modal Wrapper: For login/signup and alerts.
+
+# Back-end section
+The Airbnb Clone Project is a comprehensive, real-world application designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security. This project enables learners to understand complex architectures, workflows, and collaborative team dynamics while building a scalable web application.
+
+
+## Technology Stack
+- Django
+  - Python web framework used for building the RESTful API.
+- Django/Rest framework
+  - Provides tools for creating and managing RESTful APIs.
+- PostgreSQL
+  - A powerful relational database used for data storage.
+- GraphQL
+  - Allows for flexible and efficient querying of data.
+- Celery
+  - For handling asynchronous tasks such as sending notifications or processing payments.
+- Redis
+  - Used for caching and session management.
+- Docker
+  - Containerization tool for consistent development and deployment environments.
+- CI/CD pipelines
+  - Automated pipelines for testing and deploying code changes.
+
+## Team Roles
+- Backend Developer: 
+  - Responsible for implementing API endpoints, database schemas, and business logic.
+- Database Administrator: 
+  - Manages database design, indexing, and optimizations.
+- DevOps Engineer: 
+  - Handles deployment, monitoring, and scaling of the backend services.
+- QA Engineer: 
+  - Ensures the backend functionalities are thoroughly tested and meet quality standards.
+
+## Database Design
+The backend side of this application will include the following entities
+- Users
+  - a user can have multiple properties
+  - a user can have multiple payments
+- Properties
+  - a property can have multiple bookings
+  - a property can have multiple reviews
+- Bookings
+  - a booking belongs to a property
+  - a booking belongs to a user
+- Reviews
+  - a review belongs to a property
+- Payments.
+  - a payment belongs to a booking
+  - a payment belongs to a user
+
+## Feature Breakdown
+The features implemented in this API include the following
+- User management
+  - Implement a secure system for user registration, authentication, and profile management.
+- Property management
+  - Develop features for property listing creation, updates, and retrieval.
+- Booking system
+  - Create a booking mechanism for users to reserve properties and manage booking details.
+- Reviews management
+  - Allow users to leave reviews and ratings for properties.
+- Data Optimization
+  - Ensure efficient data retrieval and storage through database optimizations.
+
+## API Security
+ - User authentication
+   - Ensures that only legitimate users can access protected resources
+ - User authorization
+   - Verify the identity of users before granting access to a system or application. 
+ - Rate limiting
+   - Essential for maintaining the stability, security, and fair usage of an API. It controls how many requests a client can make to a server within a specified time frame.
+
+## CI/CD Pipeline
+- GitHub Actions
+  - Is a CI/CD (Continuous Integration and Continuous Deployment) feature built into GitHub that allows you to automate workflows for building, testing, and deploying your code
+- Docker
+  - Docker is a platform used to build, ship, and run applications inside containers. Containers are lightweight, portable, and consistent environments that bundle your application with all its dependencies
