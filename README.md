@@ -2,6 +2,8 @@
 Airbnb Clone is a full-stack web application that mimics the core functionality of Airbnb: users can browse, filter, and book short-term rental listings; hosts can create and manage their own listings; and both parties can review past stays.
 
 # Front-end section
+This project is a full-stack clone of the popular accommodation booking platform AirBnB. The goal is to build a functional web application that allows users to browse property listings, view detailed property information, and complete bookings. 
+
 ## Tech Stack
 - Front-End
    - React with TypeScript, Next.js for server-side rendering and static site generation, TailwindCSS for styling.
